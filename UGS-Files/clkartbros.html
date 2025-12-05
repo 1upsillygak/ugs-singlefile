@@ -758,13 +758,10 @@
       </ul>
 
       <div class="changelog">
-        <h2>Last Changelog Update (10/20/2025) v1.44</h2>
-        <p>🛣️ TRACKS! 3 new tracks: Space, Ancient and Garden</p>
-        <p>🏎️ MORE RACERS!!! More to choose from, unlock them now </p>
-        <p>🚩 FLAGS! Personalize your kart! </p>
-        <p>🏆 NEW CUP! Can you beat Furious Racers in a grand prix? </p>
-        <p>🔓 UNLOCKS!! Better unlock progression for new players</p>
-        <p>🪲 BUG FIXES!!</p>
+        <h2>Last Changelog Update (11/28/2025) v1.55</h2>
+        <p>⏱️ NEW MODE: TIME TRIAL - no rivals, no items, just you vs your best time! </p>
+        <p>🚀 START BOOST! Spin up your tires for a launch boost - but don't overheat!</p>
+        <p>🐛 BUG FIXES!!</p>
       </div>
 
       <div class="faq">
@@ -918,17 +915,17 @@
       return URL.createObjectURL(mergedBlob);
     }
 
-    var buildUrl = "Build";
-    var loaderUrl = buildUrl + "/50aae8885f8128746acbcf303169f06d.loader.js";
+var buildUrl = "kartbros.io/Build";
+    var loaderUrl = buildUrl + "/0e0d753ad16a0e82529f8029776793d5.loader.js";
     var config = {
       arguments: [],
-      dataUrl: buildUrl + "/8a36ffb7a14f6fd1cee9540e7a27ad5d.data.unityweb",
-      frameworkUrl: buildUrl + "/fa2ee6ed0d928fb054a06955bee03cec.framework.js.unityweb",
-      codeUrl: buildUrl + "/dddaa5fa4402a195b575e42611368142.wasm.unityweb",
-      streamingAssetsUrl: "StreamingAssets",
+      dataUrl: buildUrl + "/b3b5c59135710172740929131608e9db.data.unityweb",
+      frameworkUrl: buildUrl + "/3acf97379dd9dfc9195797f60b302c82.framework.js.unityweb",
+        codeUrl: buildUrl + "/bbc18f9eb70150e2cee2ae5c69217ac9.wasm.unityweb",
+        streamingAssetsUrl: "StreamingAssets",
       companyName: "BlueWizard",
       productName: "KART BROS!",
-      productVersion: "1.43",
+      productVersion: "1.55",
       showBanner: unityShowBanner,
     };
 
@@ -936,8 +933,8 @@
 
     // Load BOTH split files (adjust the number 2 to match your actual part count)
     Promise.all([
-      loadSplitData(buildUrl + "/8a36ffb7a14f6fd1cee9540e7a27ad5d.data.unityweb", 2),
-      loadSplitData(buildUrl + "/dddaa5fa4402a195b575e42611368142.wasm.unityweb", 2)
+      loadSplitData(buildUrl + "/b3b5c59135710172740929131608e9db.data.unityweb", 2),
+      loadSplitData(buildUrl + "/bbc18f9eb70150e2cee2ae5c69217ac9.wasm.unityweb", 2)
     ])
     .then(([dataUrl, wasmUrl]) => {
       config.dataUrl = dataUrl;
